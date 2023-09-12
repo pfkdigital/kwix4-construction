@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 export const Aboutus = () => {
   return (
@@ -11,11 +12,12 @@ export const Aboutus = () => {
       <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
         <div className="flex flex-wrap ">
           <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
-            <div className="relative">
-              <img
+            <div className="relative h-96">
+              <Image
                 src="https://images.unsplash.com/photo-1523413184730-e85dbbd04aba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-                alt=""
+                alt="tiling-services-kwix4"
                 className="relative z-40 object-cover w-full h-96 lg:rounded-tr-[80px] lg:rounded-bl-[80px] rounded"
+                fill
               />
               <div className="absolute z-10 hidden w-full h-full bg-orange-400 rounded-bl-[80px] rounded -bottom-6 right-6 lg:block"></div>
             </div>

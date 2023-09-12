@@ -71,7 +71,7 @@ const NavBar = () => {
           }`}
         ></div>
         <div
-          className={`absolute inset-0 z-10 h-screen p-3 text-white duration-500 transform shadow-md bg-black w-80 lg:hidden lg:transform-none lg:relative ${
+          className={`absolute inset-0 z-10 h-screen p-3 z-30 text-white duration-500 transform shadow-md bg-black w-80 lg:hidden lg:transform-none lg:relative ${
             open
               ? "translate-x-0 ease-in-opacity-100"
               : "-translate-x-full ease-out opacity-0"
