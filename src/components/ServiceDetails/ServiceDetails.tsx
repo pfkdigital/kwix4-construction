@@ -57,11 +57,13 @@ const ServiceDetails = ({ details }: DetailsType) => {
               Contact us
             </Link>
           </div>
-          <div className="relative w-full px-4 mb-10 md:w-1/2 lg:mb-0">
-            <img
+          <div className="relative w-full px-4 mb-10 md:w-1/2 lg:mb-0 h-44 md:h-96">
+            <Image
               src={details.images}
               alt={`${details.title}-Kwix`}
               className="relative z-40 object-cover w-full rounded-md md:h-96 h-44"
+              fill
+              priority={true}
             />
             <div className="absolute top-0 right-0 items-center justify-center hidden -mt-16 lg:inline-flex"></div>
           </div>

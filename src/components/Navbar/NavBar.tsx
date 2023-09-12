@@ -50,7 +50,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/blog" legacyBehavior>
+              <Link href="/portfolio" legacyBehavior>
                 <a className="text-sm text-white hover:text-orange-400">
                   Portfolio
                 </a>
@@ -114,7 +114,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="pb-3">
-              <Link href="/blog" legacyBehavior>
+              <Link href="/portfolio" legacyBehavior>
                 <a className="text-sm text-white hover:text-orange-400">
                   Portfolio
                 </a>
