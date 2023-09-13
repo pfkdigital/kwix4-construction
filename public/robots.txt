@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://www.kwix4construction.co.uk/sitemap.xml

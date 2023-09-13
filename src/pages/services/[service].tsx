@@ -2,6 +2,7 @@ import ServiceDetails from "@/components/ServiceDetails/ServiceDetails";
 import ServiceHeader from "@/components/ServiceHeader/ServiceHeader";
 import { services } from "@/components/Services/data";
 import { ServiceCardProps } from "@/types/service-card.types";
+import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
 
 type ServicePage = {
@@ -11,6 +12,18 @@ type ServicePage = {
 const ServicesPage = ({ currentService }: ServicePage) => {
   return (
     <>
+      <NextSeo
+        title={`${currentService.name} - Kwix4 Construction`}
+        description={currentService.description}
+        canonical={`https://www.kwix4construction.co.uk/services/${currentService.slug}`}
+        openGraph={{
+          type: "website",
+          locale: "en_GB",
+          url: `https://www.kwix4construction.co.uk/services/${currentService.slug}`,
+          title: `${currentService.name} - Kwix4 Construction`,
+          site_name: "Kwix4 Construction",
+        }}
+      />
       <ServiceHeader
         title={currentService.name}
         description={currentService.description}
