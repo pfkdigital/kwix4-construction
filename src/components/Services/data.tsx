@@ -1,3 +1,10 @@
+import tilingImage from "@/../public/tiling.webp"
+import flooringImage from "@/../public/flooring-services.webp"
+import plasteringImage from "@/../public/plastering-services.webp"
+import paintingImage from "@/../public/painting-service.webp"
+import bathroomImage from "@/../public/bathroom-renovation.webp"
+import kitchenImage from "@/../public/kitchen-renovation.webp"
+
 export const services = [
   {
     name: "Tiling Services",
@@ -53,7 +60,7 @@ export const services = [
         "Comprehensive tiling solutions: From consultation to installation.",
       ],
       images:
-        "https://images.unsplash.com/photo-1523413184730-e85dbbd04aba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+        tilingImage,
     },
   },
   {
@@ -113,7 +120,7 @@ export const services = [
         "Expert advice and guidance, from choosing the right material to post-installation care.",
       ],
       images:
-        "https://images.unsplash.com/photo-1630699376289-b62375a35505?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+       flooringImage,
     },
   },
   {
@@ -174,7 +181,7 @@ export const services = [
         "Expert advice on maintenance to keep your plaster in perfect condition.",
       ],
       images:
-        "https://plus.unsplash.com/premium_photo-1683120897865-b09acb266810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+       plasteringImage,
     },
   },
   {
@@ -230,7 +237,7 @@ export const services = [
         "Personalized consultations to pick the perfect palette for your space.",
       ],
       images:
-        "https://images.unsplash.com/photo-1516962080544-eac695c93791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+        paintingImage,
     },
   },
   {
@@ -307,7 +314,7 @@ export const services = [
         "Transparent communication, timely delivery.",
       ],
       images:
-        "https://images.unsplash.com/photo-1517414628894-83d47b22f233?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80",
+        bathroomImage,
     },
   },
   {
@@ -359,8 +366,7 @@ export const services = [
         "Efficient space planning for maximum utility.",
         "Quick, hassle-free installations.",
       ],
-      images:
-        "https://images.unsplash.com/photo-1564540586988-aa4e53c3d799?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      images: kitchenImage,
     },
   },
 ];

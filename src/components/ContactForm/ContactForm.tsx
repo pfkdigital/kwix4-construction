@@ -1,8 +1,25 @@
 /* eslint-disable react/no-unescaped-entities */
-import Link from "next/link";
-import React from "react";
+import React, { ChangeEvent, useState } from "react";
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState<ContactFormDto>({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.currentTarget;
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
     <section className="py-16 bg-gray-100 font-poppins">
       <div className="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto lg:py-10 md:px-7">
@@ -87,9 +104,12 @@ const ContactForm = () => {
             <div className="flex flex-wrap mb-4 -mx-2">
               <div className="w-full px-2 mb-4 lg:mb-0 lg:w-1/2">
                 <input
-                  className="w-full px-3 py-2 leading-loose border rounded-md bg-gray-50 "
+                  className="w-full px-3 py-2 leading-loose border rounded-md bg-gray-50 text-gray-400 "
                   type="text"
                   placeholder="First Name.."
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -97,9 +117,12 @@ const ContactForm = () => {
               {/* Last Name Input */}
               <div className="w-full px-2 lg:w-1/2">
                 <input
-                  className="w-full px-3 py-2 leading-loose border rounded-md bg-gray-50 "
+                  className="w-full px-3 py-2 leading-loose border rounded-md bg-gray-50 text-gray-400 "
                   type="text"
                   placeholder="Last Name.."
+                  value={formData.lastName}
+                  name="lastName"
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -107,9 +130,12 @@ const ContactForm = () => {
 
             {/* Email Input */}
             <input
-              className="w-full px-3 py-2 mb-4 leading-loose border rounded-md bg-gray-50 "
+              className="w-full px-3 py-2 mb-4 leading-loose border rounded-md bg-gray-50 text-gray-400 "
               type="email"
               placeholder="abc@gmail.com"
+              value={formData.email}
+              name="email"
+              onChange={handleChange}
               required
             />
 
@@ -118,7 +144,10 @@ const ContactForm = () => {
               rows={4}
               placeholder="Write a message..."
               required
-              className="block w-full px-4 mb-4 leading-tight text-gray-700 border rounded bg-gray-50  py-7  "
+              value={formData.message}
+              name="message"
+              onChange={handleChange}
+              className="block w-full px-4 mb-4 leading-tightborder rounded bg-gray-50  py-7 text-gray-400 "
             ></textarea>
 
             {/* Send Message Button */}

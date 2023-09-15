@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import React from "react";
 
 export interface ServiceCardProps {
@@ -13,5 +14,5 @@ export interface ServiceDetailsType {
   title: string;
   description: string;
   features: string[];
-  images: string;
+  images: StaticImageData;
 }

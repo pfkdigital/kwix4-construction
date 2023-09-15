@@ -24,12 +24,12 @@ export const Header = () => {
             </p>
             <div className="justify-center sm:flex">
               <div className="">
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="flex items-center justify-center w-full px-8 py-3 text-gray-100 font-bold bg-orange-400 rounded-md shadow hover:bg-orange-300 "
                 >
                   Contact us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
