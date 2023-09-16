@@ -19,7 +19,7 @@ const ServicesPage = () => {
           site_name: "Kwix4 Construction",
         }}
       />
-      <Services />
+      <Services  theme={"light"}/>
     </>
   );
 };

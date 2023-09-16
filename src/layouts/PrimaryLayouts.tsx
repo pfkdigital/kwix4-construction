@@ -8,11 +8,11 @@ interface PrimaryLayoutsProps {
 
 const PrimaryLayouts: React.FC<PrimaryLayoutsProps> = ({ children }) => {
   return (
-    <>
+    <div className="relative">
       <NavBar />
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 

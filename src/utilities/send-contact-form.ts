@@ -5,6 +5,7 @@ export const handleData = async ({
   lastName,
   email,
   message,
+    number
 }: ContactFormDto) => {
   try {
     const response = await axios.post("http://localhost:3000/api/contact", {
@@ -12,6 +13,7 @@ export const handleData = async ({
       lastName,
       email,
       message,
+      number
     });
     return response.data;
   } catch (error) {

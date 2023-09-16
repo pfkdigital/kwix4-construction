@@ -4,7 +4,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <>
+    <div className="relative">
       <NextSeo
         title="Contact Us - Kwix4 Construction"
         description="Get in touch with Kwix4 Construction. Whether you have a query, feedback, or want to discuss a project, we're here to help."
@@ -20,7 +20,7 @@ const Contact = () => {
         }}
       />
       <ContactForm />
-    </>
+    </div>
   );
 };
 

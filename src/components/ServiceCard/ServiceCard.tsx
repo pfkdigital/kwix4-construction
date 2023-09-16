@@ -2,19 +2,18 @@ import { ServiceCardProps } from "@/types/service-card.types";
 import Link from "next/link";
 import React from "react";
 
-const ServiceCard = ({ url, name, svg }: ServiceCardProps) => {
+const ServiceCard = ({ url, name, svg, theme }: ServiceCardProps) => {
   return (
-    <Link href={url}>
-      <div className="w-full p-8 text-center transition-all bg-white rounded shadow dark:bg-gray-700 hover:shadow-lg hover:bg-gray-600">
-        <div className="inline-block p-4 mb-4 bg-orange-400 rounded-full">
-          {svg}
-        </div>
-        <h3 className="text-lg font-semibold text-black dark:text-white">
-          {" "}
-          {name}{" "}
-        </h3>
-      </div>
-    </Link>
+      <Link href={url}>
+          <div className={`w-full p-8 text-center transition-all bg-white rounded shadow ${theme === "dark" ? "bg-gray-700" : ""} hover:shadow-lg hover:bg-gray-600 ${theme === "dark" ? "hover:bg-gray-600" : "hover:bg-gray-200"}`}>
+              <div className="inline-block p-4 mb-4 bg-orange-400 rounded-full">
+                  {svg}
+              </div>
+              <h3 className={`text-lg font-semibold ${theme === "dark" ? "text-white" : "text-gray-500"}`}>
+                  {name}
+              </h3>
+          </div>
+      </Link>
   );
 };
 

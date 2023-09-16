@@ -63,7 +63,7 @@ const ServiceDetails = ({ details }: DetailsType) => {
               alt={`${details.title}-Kwix4`}
               className="relative z-40 object-cover w-full rounded-md md:h-96 h-44"
               fill
-              quality={10}
+              quality={50}
             />
             <div className="absolute top-0 right-0 items-center justify-center hidden -mt-16 lg:inline-flex"></div>
           </div>

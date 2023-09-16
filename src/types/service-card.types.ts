@@ -8,6 +8,7 @@ export interface ServiceCardProps {
   slug: string;
   description: string;
   details: ServiceDetailsType;
+  theme: string
 }
 
 export interface ServiceDetailsType {

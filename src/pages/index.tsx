@@ -1,5 +1,5 @@
 import Header from "@/components/Header/Header";
-import { Aboutus } from "./../components/Aboutus/Aboutus";
+import { Aboutus } from "@/components/Aboutus/Aboutus";
 import Services from "@/components/Services/Services";
 import Reviews from "@/components/Reviews/Reviews";
 import { NextSeo } from "next-seo";
@@ -23,7 +23,7 @@ const Home = () => {
       />
       <Header />
       <Aboutus />
-      <Services />
+      <Services  theme={"dark"}/>
       <Reviews />
     </>
   );
