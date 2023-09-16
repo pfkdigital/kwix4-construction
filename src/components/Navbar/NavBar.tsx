@@ -9,7 +9,7 @@ const NavBar = () => {
       <div className="max-w-6xl px-4 mx-auto">
         <nav className="flex items-center justify-between py-3">
           <Link href="/" legacyBehavior>
-            <a className="text-3xl font-bold leading-none text-white">
+            <a className="text-3xl font-bold leading-none text-white" aria-label="Home page">
               <span className="text-orange-400">K</span>wix4
             </a>
           </Link>
@@ -19,6 +19,7 @@ const NavBar = () => {
                 open ? "hidden" : ""
               }`}
               onClick={() => setOpen(true)}
+              aria-label="Mobile menu toggler"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,19 +40,19 @@ const NavBar = () => {
           >
             <li>
               <Link href="/" legacyBehavior>
-                <a className="text-sm text-white hover:text-orange-400">Home</a>
+                <a className="text-sm text-white hover:text-orange-400" aria-label="Home page">Home</a>
               </Link>
             </li>
             <li>
               <Link href="/services" legacyBehavior>
-                <a className="text-sm text-white hover:text-orange-400">
+                <a className="text-sm text-white hover:text-orange-400" aria-label="Services page">
                   Services
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/portfolio" legacyBehavior>
-                <a className="text-sm text-white hover:text-orange-400">
+                <a className="text-sm text-white hover:text-orange-400" aria-label="Portfolio page">
                   Portfolio
                 </a>
               </Link>
@@ -59,7 +60,7 @@ const NavBar = () => {
           </ul>
           <div className="hidden lg:block">
             <Link href="/contact" legacyBehavior>
-              <a className="inline-block px-4 py-3 mr-2 text-xs font-medium leading-none text-white border border-orange-400 rounded-full transition-all hover:bg-orange-400 hover:border-transparent">
+              <a className="inline-block px-4 py-3 mr-2 text-xs font-medium leading-none text-white border border-orange-400 rounded-full transition-all hover:bg-orange-400 hover:border-transparent" aria-label="Contact page">
                 Contact Us
               </a>
             </Link>
@@ -79,7 +80,7 @@ const NavBar = () => {
         >
           <div className="flex justify-between px-5 py-2">
             <Link href="/" legacyBehavior>
-              <a className="text-2xl font-bold text-white">
+              <a className="text-2xl font-bold text-white" aria-label="Home page">
                 {" "}
                 <span className="text-orange-400">K</span>wix4
               </a>
@@ -103,12 +104,12 @@ const NavBar = () => {
           <ul className="px-5 text-left mt-7 ">
             <li className="pb-3">
               <Link href="/" legacyBehavior>
-                <a className="text-sm text-white hover:text-orange-400">Home</a>
+                <a className="text-sm text-white hover:text-orange-400" aria-label="Home page">Home</a>
               </Link>
             </li>
             <li className="pb-3">
               <Link href="/services" legacyBehavior>
-                <a className="text-sm text-white hover:text-orange-400">
+                <a className="text-sm text-white hover:text-orange-400" aria-label={"Services Page"}>
                   Services
                 </a>
               </Link>
@@ -123,7 +124,7 @@ const NavBar = () => {
           </ul>
           <div className="flex items-center mt-5 lg:hidden">
             <Link href="/contact" legacyBehavior>
-              <a className="inline-block w-full px-4 py-3 mr-2 text-xs font-bold leading-none text-center text-white bg-orange-400 hover:bg-orange-300 rounded-full">
+              <a className="inline-block w-full px-4 py-3 mr-2 text-xs font-bold leading-none text-center text-white bg-orange-400 hover:bg-orange-300 rounded-full" aria-label={"Contact Page"}>
                 Contact Us
               </a>
             </Link>

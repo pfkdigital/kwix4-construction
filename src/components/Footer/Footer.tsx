@@ -31,25 +31,28 @@ const Footer = () => {
                   <Link
                     href="/services"
                     className="inline-block text-base font-normal text-gray-400 hover:text-orange-400"
+                    aria-label={"Services PAge"}
                   >
                     Services
                   </Link>
                 </li>
                 <li className="mb-4">
                   <Link
-                    href="/contact"
+                    href="/portfolio"
                     className="inline-block text-base font-normal text-gray-400 hover:text-orange-400"
+                    aria-label="Portfolio Page"
                   >
                     Portfolio
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <a
-                    href="#"
+                  <Link
+                    href="/contact"
                     className="inline-block text-base font-normal text-gray-400 hover:text-orange-400"
+                    aria-label={"Contact page"}
                   >
                     Contact us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -75,6 +78,7 @@ const Footer = () => {
                   type="button"
                   className="m-1 leading-normal text-gray-300 uppercase transition duration-150 ease-in-out border-2 border-gray-400 rounded-full dark:border-gray-400 dark:hover:bg-gray-800 hover:border-orange-600 hover:bg-orange-800 w-9 h-9"
                   target="_blank"
+                  aria-label="Go to our facebook page"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -97,6 +101,7 @@ const Footer = () => {
                 href={"https://pfkdigital.co.uk"}
                 className="font-bold text-orange-400"
                 target={"_blank"}
+                aria-label="Go the PFK Digitals web page"
               >
                 PFK Digital
               </Link>
@@ -105,7 +110,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="hidden absolute h-auto right-12 top-[-75px] mx-auto w-screen justify-end items-center lg:flex">
-        <a href="#nav">
+        <a href="#nav" aria-label="Go back to the top of the page">
           <div className="h-12 w-12 flex justify-center items-center border-2 border-orange-400 rounded-full cursor-pointer bg-orange-400 transition hover:bg-orange-300 hover:border-orange-300">
             <FaAngleUp />
           </div>

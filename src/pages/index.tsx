@@ -23,7 +23,7 @@ const Home = () => {
       />
       <Header />
       <Aboutus />
-      <Services  theme={"dark"}/>
+      <Services theme={"dark"}/>
       <Reviews />
     </>
   );

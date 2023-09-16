@@ -19,9 +19,9 @@ const ServicesPage = () => {
           site_name: "Kwix4 Construction",
         }}
       />
-      <Services  theme={"light"}/>
+      <Services theme={"light"}/>
     </>
   );
 };
 
-export default Services;
+export default ServicesPage;
