@@ -68,6 +68,7 @@ export const Header = () => {
                                 quality={100}
                                 height={350}
                                 width={350}
+                                priority={true}
                                 alt="Background logo"
                                 className="mx-auto clip-logo"
                             />
