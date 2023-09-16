@@ -4,15 +4,11 @@ import { sendMail } from "../../services/email.service";
 async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
     const { method } = req;
-
     switch (method) {
       case "POST": {
-        //Do some thing
-        await sendMail(
-          "TEST",
-          "nuh_mali@hotmail.co.uk",
-          "THIS is a test"
-        );
+        console.log("hi")
+        const { firstName, lastName, email, message } = req.body;
+        await sendMail(`You have an email from ${firstName} ${lastName}`, email, message);
         res.status(200).send("Success");
         break;
       }

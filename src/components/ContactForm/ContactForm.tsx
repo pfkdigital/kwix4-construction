@@ -20,6 +20,11 @@ const ContactForm = () => {
     }));
   };
 
+  const handleSubmit = async(e:ChangeEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    return setFormData(formData)
+  }
+
   return (
     <section className="py-16 bg-gray-100 font-poppins">
       <div className="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto lg:py-10 md:px-7">
@@ -93,7 +98,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="px-8 py-8 bg-white border rounded-md shadow-md ">
-          <form action="">
+          <form onSubmit={handleSubmit}>
             <div className="mb-6">
               <h2 className="text-xl font-bold text-gray-00 ">
                 Please send a message for further information!
@@ -151,7 +156,7 @@ const ContactForm = () => {
             ></textarea>
 
             {/* Send Message Button */}
-            <button className="w-full py-4 text-sm font-bold leading-normal text-white transition-all duration-300 bg-orange-600 rounded-md  hover:bg-orange-700">
+            <button className="w-full py-4 text-sm font-bold leading-normal text-white transition-all duration-300 bg-orange-600 rounded-md  hover:bg-orange-700" type="submit">
               Send Message
             </button>
           </form>
