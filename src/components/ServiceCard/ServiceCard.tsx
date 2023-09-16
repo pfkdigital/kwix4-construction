@@ -6,7 +6,7 @@ const ServiceCard = ({url, name, svg, theme}: ServiceCardProps) => {
     return (
         <Link href={url}>
             <div
-                className={`w-full p-8 text-center transition-all bg-white rounded shadow ${theme === "dark" ? "bg-gray-700" : ""} hover:shadow-lg  ${theme === "dark" ? "hover:bg-gray-600" : "hover:bg-gray-200"} `}>
+                className={`w-full p-8 text-center transition-all  rounded shadow ${theme === "dark" ? "dark:bg-gray-700" : "bg-white"} hover:shadow-lg  ${theme === "dark" ? "hover:bg-gray-600" : "hover:bg-gray-200"} `}>
                 <div className="inline-block p-4 mb-4 bg-orange-400 rounded-full">
                     {svg}
                 </div>
