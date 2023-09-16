@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eede866c-4185-4e30-aec0-6abacc463b13" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/logo-image.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServiceCard/ServiceCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Services.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/services.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/service-card.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/service-card.types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactForm/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm/ContactForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694804596459</updated>
       <workItem from="1694804599850" duration="1190000" />
-      <workItem from="1694856925861" duration="10574000" />
+      <workItem from="1694856925861" duration="10887000" />
     </task>
     <servers />
   </component>

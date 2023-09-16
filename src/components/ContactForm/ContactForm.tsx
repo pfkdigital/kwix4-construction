@@ -64,9 +64,9 @@ const ContactForm = () => {
                                 </div>
                             </div>
                             <p className="mb-16 text-base text-center text-gray-500">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-                                magni eius eaque? Pariatur numquam, odio quod nobis ipsum ex
-                                cupiditate?
+                                Ready to embark on a new project or have a question about our services? Reach out to us!
+                                We're here to help and guide you towards making the best decisions for your needs. Let's
+                                create something exceptional together.
                             </p>
                         </div>
                     </div>
