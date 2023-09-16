@@ -6,10 +6,9 @@ import Image from "next/image"
 import logo from "@/../public/logo-image.webp"
 
 export const Header = () => {
-    const [shouldAnimate, setShouldAnimate] = useState(false);
+    const [shouldAnimate, setShouldAnimate] = useState(true);
 
     useEffect(() => {
-        console.log()
         if (window.innerWidth > 768) {
             setShouldAnimate(true);
         }
@@ -46,12 +45,12 @@ export const Header = () => {
 
     const fadeInScroll = {
         hidden: {opacity: 0,},
-        visible: {opacity: 1, delay: "0.7"}
+        visible: {opacity: 1}
     };
 
     const fadeInImage = {
         hidden: {opacity: 0,},
-        visible: {opacity: 1, delay: "0.7"}
+        visible: {opacity: 1}
     };
 
     return (
@@ -63,7 +62,8 @@ export const Header = () => {
                         <motion.div initial={shouldAnimate ? "hidden" : {}}
                                     animate={shouldAnimate ? "visible" : {}}
                                     transition={{duration: 0.6, type: "spring"}}
-                                    variants={fadeInImage}>
+                                    variants={fadeInImage}
+                                    >
                             <Image
                                 src={logo}
                                 quality={100}
@@ -108,7 +108,7 @@ export const Header = () => {
                     </div>
                 </div>
                 <motion.div
-                    className="hidden absolute h-auto left-0 bottom-[85px] mx-auto w-screen md:flex justify-center items-center"
+                    className="absolute h-auto left-0 bottom-[85px] mx-auto w-screen flex justify-center items-center"
                     initial={shouldAnimate ? "hidden" : {}}
                     animate={shouldAnimate ? "visible" : {}}
                     transition={{duration: 0.6, type: "spring", delay: 0.6}}

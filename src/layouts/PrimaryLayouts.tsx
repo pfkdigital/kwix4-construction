@@ -8,7 +8,7 @@ interface PrimaryLayoutsProps {
 
 const PrimaryLayouts: React.FC<PrimaryLayoutsProps> = ({ children }) => {
   return (
-    <div className="relative overflow-x-hidden">
+    <div className="relative overflow-x-clip">
       <NavBar />
       {children}
       <Footer />
