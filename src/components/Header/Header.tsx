@@ -6,9 +6,10 @@ import Image from "next/image"
 import logo from "@/../public/logo-image.webp"
 
 export const Header = () => {
-    const [shouldAnimate, setShouldAnimate] = useState(true);
+    const [shouldAnimate, setShouldAnimate] = useState(false);
 
     useEffect(() => {
+        console.log()
         if (window.innerWidth > 768) {
             setShouldAnimate(true);
         }
@@ -107,7 +108,7 @@ export const Header = () => {
                     </div>
                 </div>
                 <motion.div
-                    className="absolute h-auto left-0 bottom-[85px] mx-auto w-screen flex justify-center items-center"
+                    className="hidden absolute h-auto left-0 bottom-[85px] mx-auto w-screen md:flex justify-center items-center"
                     initial={shouldAnimate ? "hidden" : {}}
                     animate={shouldAnimate ? "visible" : {}}
                     transition={{duration: 0.6, type: "spring", delay: 0.6}}

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-
+  const closeMenu = () => setOpen(false)
   return (
     <section className="dark:bg-gray-900 font-poppins" id="nav">
       <div className="max-w-6xl px-4 mx-auto">
@@ -87,7 +87,7 @@ const NavBar = () => {
             </Link>
             <button
               className="rounded-md hover:text-blue-300 lg:hidden dark:text-gray-400"
-              onClick={() => setOpen(false)}
+              onClick={closeMenu}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -103,20 +103,20 @@ const NavBar = () => {
           </div>
           <ul className="px-5 text-left mt-7 ">
             <li className="pb-3">
-              <Link href="/" legacyBehavior>
-                <a className="text-sm text-white hover:text-orange-400" aria-label="Home page">Home</a>
+              <Link href="/"  legacyBehavior>
+                <a onClick={closeMenu} className="text-sm text-white hover:text-orange-400" aria-label="Home page">Home</a>
               </Link>
             </li>
             <li className="pb-3">
-              <Link href="/services" legacyBehavior>
-                <a className="text-sm text-white hover:text-orange-400" aria-label={"Services Page"}>
+              <Link href="/services"  legacyBehavior>
+                <a onClick={closeMenu} className="text-sm text-white hover:text-orange-400" aria-label={"Services Page"}>
                   Services
                 </a>
               </Link>
             </li>
             <li className="pb-3">
               <Link href="/portfolio" legacyBehavior>
-                <a className="text-sm text-white hover:text-orange-400">
+                <a onClick={closeMenu} className="text-sm text-white hover:text-orange-400">
                   Portfolio
                 </a>
               </Link>
@@ -124,7 +124,7 @@ const NavBar = () => {
           </ul>
           <div className="flex items-center mt-5 lg:hidden">
             <Link href="/contact" legacyBehavior>
-              <a className="inline-block w-full px-4 py-3 mr-2 text-xs font-bold leading-none text-center text-white bg-orange-400 hover:bg-orange-300 rounded-full" aria-label={"Contact Page"}>
+              <a onClick={closeMenu} className="inline-block w-full px-4 py-3 mr-2 text-xs font-bold leading-none text-center text-white bg-orange-400 hover:bg-orange-300 rounded-full" aria-label={"Contact Page"}>
                 Contact Us
               </a>
             </Link>
