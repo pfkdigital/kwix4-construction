@@ -4,29 +4,10 @@ import {FaAngleDown} from "react-icons/fa";
 import {motion} from 'framer-motion';
 import Image from "next/image"
 import logo from "@/../public/logo-image.webp"
+import {useMediaQuery} from "usehooks-ts";
 
 export const Header = () => {
-    const [shouldAnimate, setShouldAnimate] = useState(true);
-
-    useEffect(() => {
-        if (window.innerWidth > 768) {
-            setShouldAnimate(true);
-        }
-
-        const handleResize = () => {
-            if (window.innerWidth > 768) {
-                setShouldAnimate(true);
-            } else {
-                setShouldAnimate(false);
-            }
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    const isLarge = useMediaQuery('(min-width: 768px)')
 
     const fadeIn = {
         hidden: {opacity: 0, x: "-200px"},
@@ -59,8 +40,9 @@ export const Header = () => {
                 <div className="absolute top-0 bottom-0 left-0 right-0 bg-black opacity-80"></div>
                 <div className="relative z-10 px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
-                        <motion.div initial={shouldAnimate ? "hidden" : {}}
-                                    animate={shouldAnimate ? "visible" : {}}
+
+                        <motion.div initial={isLarge ? "hidden" : {}}
+                                    animate={isLarge ? "visible" : {}}
                                     transition={{duration: 0.6, type: "spring"}}
                                     variants={fadeInImage}
                                     >
@@ -76,8 +58,8 @@ export const Header = () => {
                         </motion.div>
                         <motion.h1
                             className="mb-10 text-4xl font-bold leading-10 tracking-tight text-gray-50 md:text-6xl"
-                            initial={shouldAnimate ? "hidden" : {}}
-                            animate={shouldAnimate ? "visible" : {}}
+                            initial={isLarge ? "hidden" : {}}
+                            animate={isLarge ? "visible" : {}}
                             transition={{duration: 0.8, type: "spring"}}
                             variants={fadeIn}>
                             <span className="text-orange-400">K</span>wix4 Building & Construction
@@ -86,14 +68,14 @@ export const Header = () => {
                         >
                         <motion.h2
                             className="mb-10 tracking-wide font-bold text-white sm:mt-5 sm:text-md sm:max-w-xl sm:mx-auto md:mt-5"
-                            initial={shouldAnimate ? "hidden" : {}}
-                            animate={shouldAnimate ? "visible" : {}}
+                            initial={isLarge ? "hidden" : {}}
+                            animate={isLarge ? "visible" : {}}
                             transition={{duration: 0.8, type: "spring"}}
                             variants={fadeInSub}>
                             CRAFTING EXCELLENCE IN EVERY CORNER
                         </motion.h2>
-                        <motion.div className="justify-center sm:flex" initial={shouldAnimate ? "hidden" : {}}
-                                    animate={shouldAnimate ? "visible" : {}}
+                        <motion.div className="justify-center sm:flex" initial={isLarge ? "hidden" : {}}
+                                    animate={isLarge ? "visible" : {}}
                                     transition={{duration: 0.8, type: "spring"}}
                                     variants={fadeInButton}>
                             <div className="">
@@ -109,8 +91,8 @@ export const Header = () => {
                 </div>
                 <motion.div
                     className="absolute h-auto left-0 bottom-[85px] mx-auto w-screen flex justify-center items-center"
-                    initial={shouldAnimate ? "hidden" : {}}
-                    animate={shouldAnimate ? "visible" : {}}
+                    initial={isLarge ? "hidden" : {}}
+                    animate={isLarge ? "visible" : {}}
                     transition={{duration: 0.6, type: "spring", delay: 0.6}}
                     variants={fadeInScroll}>
                     <a href="#about" aria-label="Go to the about section from here">

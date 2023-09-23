@@ -3,7 +3,7 @@ import React from "react";
 
 const ErrorPage = () => {
   return (
-    <section className="relative h-screen bg-stone-100 font-poppins">
+    <section className="relative h-screen bg-gray-500 font-poppins">
       <div className="absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 "></div>
       <div className="flex items-center h-screen">
         <div className="container relative justify-center px-4 mx-auto text-center">

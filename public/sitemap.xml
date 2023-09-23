@@ -11,6 +11,36 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://www.kwix4construction.co.uk/services/tiling</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.kwix4construction.co.uk/services/flooring</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.kwix4construction.co.uk/plastering</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.kwix4construction.co.uk/services/painting</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.kwix4construction.co.uk/services/bathroom-renovations</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.kwix4construction.co.uk/services/kitchen-installations</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://www.kwix4construction.co.uk/portfolio</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

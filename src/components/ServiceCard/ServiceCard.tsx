@@ -10,7 +10,7 @@ const ServiceCard = ({url, name, svg, theme}: ServiceCardProps) => {
                 <div className="inline-block p-4 mb-4 bg-orange-400 rounded-full">
                     {svg}
                 </div>
-                <h5 className={`text-lg font-semibold ${theme === "dark" ? "text-white" : "text-black"}`}>
+                <h5 className={`text-lg font-semibold ${theme === "dark" ? "text-white" : "text-gray-600"}`}>
                     {name}
                 </h5>
             </div>

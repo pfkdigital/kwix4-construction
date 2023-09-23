@@ -21,7 +21,7 @@ const Services = ({theme}: ServicesProp) => {
                             <h1 className="absolute -top-14 left-0 text-[120px] font-bold opacity-5 md:block hidden">
                                 Services
                             </h1>
-                            <h1 className={`text-5xl font-bold ${theme === "dark" ? "text-white" : "text-black"}`}>
+                            <h1 className={`text-5xl font-bold ${theme === "dark" ? "text-white" : "text-gray-500"}`}>
                                 {" "}
                                 Our <span className="text-orange-500"> Services</span>{" "}
                             </h1>

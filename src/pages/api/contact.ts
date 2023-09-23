@@ -6,7 +6,6 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
         const {method} = req;
         switch (method) {
             case "POST": {
-                console.log(req.body)
                 const {firstName, lastName, email, message, number} = req.body;
                 const currentMessage = `Hi, Bless \n \n you have a message from ${firstName} ${lastName}. \n \n Email Address: ${email} \n \n Mobile Number: ${number} \n \n Message: \n \n ${message} `
                 await sendMail(`You have an email from ${firstName} ${lastName}`, email, currentMessage);

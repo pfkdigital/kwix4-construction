@@ -15,18 +15,18 @@ export const Portfolio = () => {
   return (
     <>
       <NextSeo
-        title="Portfolio - Kwix4 Construction"
-        description="Browse through our portfolio to see the transformational work done by Kwix4 Construction. From bathrooms to gardens, witness the quality of our craftsmanship."
-        canonical="https://www.kwix4construction.co.uk/portfolio"
-        openGraph={{
-          type: "website",
-          locale: "en_GB",
-          url: "https://www.kwix4construction.co.uk/portfolio",
-          title: "Portfolio - Kwix4 Construction",
-          description:
-            "Browse through our portfolio to see the transformational work done by Kwix4 Construction. From bathrooms to gardens, witness the quality of our craftsmanship.",
-          site_name: "Kwix4 Construction",
-        }}
+          title="Our Work - Kwix4 Construction | Portfolio in Manchester"
+          description="Explore the diverse and high-quality projects completed by Kwix4 Construction in Manchester and the Greater Manchester areas. From innovative bathroom renovations to elegant garden designs, witness the transformation and the exceptional level of our craftsmanship."
+          canonical="https://www.kwix4construction.co.uk/portfolio"
+          openGraph={{
+            type: "website",
+            locale: "en_GB",
+            url: "https://www.kwix4construction.co.uk/portfolio",
+            title: "Quality Building Projects - Kwix4 Construction | Manchester Portfolio",
+            description:
+                "Discover the range and quality of our building projects in Manchester. Kwix4 Construction's portfolio showcases our commitment to excellence, innovation, and customer satisfaction in every job. From intricate tiling work to comprehensive home renovations, experience the quality of our work.",
+            site_name: "Kwix4 Construction",
+          }}
       />
       <section className="flex items-center py-16 bg-gray-100 font-poppins">
         <div className="max-w-8xl p-4 mx-auto">

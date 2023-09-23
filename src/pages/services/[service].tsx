@@ -12,18 +12,19 @@ type ServicePage = {
 const ServicesPage = ({ currentService }: ServicePage) => {
   return (
     <>
-      <NextSeo
-        title={`${currentService.name} - Kwix4 Construction`}
-        description={currentService.description}
-        canonical={`https://www.kwix4construction.co.uk/services/${currentService.slug}`}
-        openGraph={{
-          type: "website",
-          locale: "en_GB",
-          url: `https://www.kwix4construction.co.uk/services/${currentService.slug}`,
-          title: `${currentService.name} - Kwix4 Construction`,
-          site_name: "Kwix4 Construction",
-        }}
-      />
+        <NextSeo
+            title={`${currentService.name} in Manchester - Kwix4 Construction`}
+            description={`${currentService.name} services in Manchester and the Greater Manchester areas. ${currentService.description}`}
+            canonical={`https://www.kwix4construction.co.uk/services/${currentService.slug}`}
+            openGraph={{
+                type: "website",
+                locale: "en_GB",
+                url: `https://www.kwix4construction.co.uk/services/${currentService.slug}`,
+                title: `${currentService.name} Services in Manchester - Kwix4 Construction`,
+                description: `Offering expert ${currentService.name} in Manchester and the Greater Manchester areas. Discover our commitment to quality and customer satisfaction. ${currentService.description}`,
+                site_name: "Kwix4 Construction",
+            }}
+        />
       <ServiceHeader
         title={currentService.name}
         description={currentService.description}
